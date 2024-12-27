@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import Image from 'next/image';  // Importing Image from next/image
 import React from 'react';
 
 const Fifth = () => {
@@ -51,7 +54,13 @@ const Fifth = () => {
             <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-4">
               <div className="bg-white rounded-lg shadow-md p-4 w-full md:w-80">
                 {/* Service Image */}
-                <img src={service.image} alt={service.name} className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                <Image 
+                  src={service.image} 
+                  alt={service.name} 
+                  width={400} 
+                  height={200} 
+                  className="w-full h-40 object-cover rounded-t-lg mb-4" 
+                />
                 
                 {/* Service Details with black background */}
                 <div className="bg-black text-white p-4 rounded-b-lg">
