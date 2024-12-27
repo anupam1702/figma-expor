@@ -1,4 +1,5 @@
 // components/InfoCard.tsx
+import Image from 'next/image';
 import React from 'react';
 
 interface InfoCardProps {
@@ -14,7 +15,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ rating, totalStudents, description,
     <div className="bg-black rounded-lg shadow-md p-8 text-white w-full md:w-[60rem] flex md:flex-row flex-col"> 
       <div className='w-full md:w-1/2 rounded-3xl overflow-hidden'>
       {imageSrc && (
-        <img src={imageSrc} alt="Card Image" className="object-cover w-full h-full" />
+        <Image src={imageSrc} alt="Card Image" className="object-cover w-full h-full" />
       )}
       </div>
       <div className="md:ml-8 mt-4 md:mt-0 md:w-1/2">

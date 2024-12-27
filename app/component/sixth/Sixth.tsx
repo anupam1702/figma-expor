@@ -1,6 +1,5 @@
 'use client';
 
-import { log } from 'console';
 import React, { useEffect, useState } from 'react';
 
 const Sixth: React.FC = () => {
