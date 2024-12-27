@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <header className="flex flex-col sm:flex-row justify-between items-center p-4">
-        <h1 className="text-xl font-bold mb-4 sm:mb-0">CSExplained</h1>
+        <h1 className="text-xl font-bold mb-4 sm:mb-0"><span className='text-blue-500'>CS</span>Explained</h1>
         <nav className="flex flex-col sm:flex-row gap-4 sm:gap-6">
           <Link className="bg-blue-500 border text-white rounded-full p-2" href="/">* Home</Link>
           <Link className="bg-white border text-black rounded-full p-2" href="/courses">Courses</Link>

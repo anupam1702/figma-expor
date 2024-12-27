@@ -1,5 +1,6 @@
 'use client';
 
+import { log } from 'console';
 import React, { useEffect, useState } from 'react';
 
 const Sixth: React.FC = () => {
@@ -8,6 +9,8 @@ const Sixth: React.FC = () => {
   useEffect(() => {
     setCurrentDate(new Date());
   }, []);
+  
+  
 
   const daysInMonth = (date: Date): number => {
     return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
@@ -44,6 +47,15 @@ const Sixth: React.FC = () => {
   const dayLabels: string[] = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
   return (
+
+<div>
+<h2 className="text-3xl font-bold text-center mb-4">
+          One to One <span className="text-blue-500">Call</span>
+        </h2>
+        <p className="text-center text-gray-500 mb-8">
+          Data analyst software is a type of software tool used for data analysis and <br /> reporting. It is designed to help business organizations.
+        </p>
+    
     <div className="flex justify-center items-center min-h-screen">
       <div className="bg-white rounded-lg shadow-md p-6 w-1/4 h-1/3">
         <div className="flex justify-between items-center mb-4">
@@ -91,6 +103,7 @@ const Sixth: React.FC = () => {
           })}
         </div>
       </div>
+    </div>
     </div>
   );
 };
