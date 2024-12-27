@@ -7,7 +7,7 @@ interface CourseProps {
 }
 
 const CourseCard: React.FC<CourseProps> = ({ founderName, description, imageSrc }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-1/4">
+  <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-1/6">
     <img
       src={imageSrc}
       alt={`${founderName}'s photo`}
