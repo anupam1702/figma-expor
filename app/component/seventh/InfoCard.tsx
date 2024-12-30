@@ -7,7 +7,7 @@ interface InfoCardProps {
   totalStudents: string;
   description: string;
   title?: string;
-  imageSrc?: string; // Add image source prop
+  imageSrc?: string; 
 }
 
 const InfoCard: React.FC<InfoCardProps> = ({ rating, totalStudents, description, title, imageSrc }) => {

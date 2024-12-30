@@ -27,7 +27,7 @@ const Fifth = () => {
           Data analyst software is a type of software tool used for data analysis and <br /> reporting. It is designed to help business organizations.
         </p>
 
-        {/* Navigation Section */}
+       
         <header className="flex justify-center mb-8">
           <nav className="flex flex-wrap gap-4 justify-center">
             <Link className="bg-blue-500 border text-white rounded-full px-4 py-2" href="/">
@@ -48,12 +48,12 @@ const Fifth = () => {
           </nav>
         </header>
 
-        {/* Services Section */}
+       
         <div className="flex flex-wrap justify-between gap-y-6">
           {services.map((service, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-4">
               <div className="bg-white rounded-lg shadow-md p-4 w-full md:w-80">
-                {/* Service Image */}
+               
                 <Image 
                   src={service.image} 
                   alt={service.name} 
@@ -62,18 +62,18 @@ const Fifth = () => {
                   className="w-full h-40 object-cover rounded-t-lg mb-4" 
                 />
                 
-                {/* Service Details with black background */}
+               
                 <div className="bg-black text-white p-4 rounded-b-lg">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-medium uppercase text-gray-400">Security</span> {/* Category */}
+                    <span className="text-xs font-medium uppercase text-gray-400">Security</span> 
                     <div className="flex items-center text-xs text-gray-300">
                       <span className="mr-1">16,345 Users</span>
                       <span>1h 25m</span>
                     </div>
                   </div>
-                  <h2 className="text-base font-semibold mb-2">{service.name}</h2> {/* Service name */}
+                  <h2 className="text-base font-semibold mb-2">{service.name}</h2> 
                   <div className="flex items-center justify-between mt-2">
-                    <span className="text-sm text-gray-400 font-medium">Jane Cooper</span> {/* Author */}
+                    <span className="text-sm text-gray-400 font-medium">Jane Cooper</span> 
                     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
                       Explore Now
                     </button>

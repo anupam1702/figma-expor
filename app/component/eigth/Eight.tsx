@@ -11,6 +11,6 @@ const Eight = () => {
 
 export default Eight
 
-// pages/index.tsx
+
 
 

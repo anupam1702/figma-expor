@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface CourseProps {
@@ -7,12 +8,15 @@ interface CourseProps {
 }
 
 const CourseCard: React.FC<CourseProps> = ({ founderName, description, imageSrc }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-1/6">
-    <img
-      src={imageSrc}
-      alt={`${founderName}'s photo`}
-      className="rounded-lg mb-4 w-full h-48 object-cover"
-    />
+  <div className="bg-white rounded-2xl shadow-md p-6 w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
+    <div className="relative w-full h-48 mb-4">
+      <Image
+        src={imageSrc}
+        alt={`${founderName}'s photo`}
+        className="rounded-lg object-cover"
+        layout="fill"
+      />
+    </div>
     <h3 className="text-xl font-semibold mb-2">{founderName}</h3>
     <p className="text-gray-600 text-sm">{description}</p>
   </div>
@@ -23,22 +27,22 @@ const CourseSection: React.FC = () => {
     {
       founderName: "Andrew Power",
       description: "Founder",
-      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s", // Replace with your image path
+      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s",
     },
     {
-      founderName: "Andrew Power",
+      founderName: "John Doe",
       description: "Founder",
-      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s", // Replace with your image path
+      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s",
     },
     {
-      founderName: "Andrew Power",
-      description: "Founder",
-      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s", // Replace with your image path
+      founderName: "Jane Smith",
+      description: "Co-Founder",
+      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s",
     },
     {
-      founderName: "Andrew Power",
-      description: "Founder",
-      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s", // Replace with your image path
+      founderName: "Michael Johnson",
+      description: "Lead Instructor",
+      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OueyDhWFfuuSLheCNFGBYcOWKAbhP_BYqQ&s",
     },
   ];
 
